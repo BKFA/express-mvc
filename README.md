@@ -8,7 +8,7 @@
 	+ Controllers
 	+ Models
 	+ Config
-	+ Templates
+	+ Templates (muốn tự cấu hình view thì tạo, không thì thôi)
 	+ server.js (không sử dụng /bin/www)
 6. Cấu hình template cơ bản
 	- Cài đặt một số các modules:
