@@ -4,6 +4,7 @@
 2. express --view=pug BkfaJS
 3. npm install
 4. npm start để chạy thử
+
 5.Cấu hình thư mục dự án:
 	+ Controllers
 	+ Models
