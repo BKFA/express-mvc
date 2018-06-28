@@ -1,8 +1,17 @@
 body {
   padding: 50px;
+<<<<<<< HEAD
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
   color: #00B7FF; }
 
 /*# sourceMappingURL=style.css.map */
+=======
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+>>>>>>> dea75721f83630bb1b66a9c4edc17b48652786ec
