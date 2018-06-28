@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "gulp;nodemon ./bin/www "
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "~4.16.0",
     "gulp-browserify": "^0.5.1",
@@ -20,10 +21,13 @@
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
     "http-errors": "~1.6.2",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
     "mongoose": "^5.1.7",
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "run-sequence": "^2.2.1"
   },
   "devDependencies": {
     "browser-sync": "^2.24.5",
