@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Docker-node-mvc
-Docker-node-mongo
-=======
 # BKFA.JS
 ## Các bước cài đặt
 1. npm install express-generator -g
@@ -26,8 +22,6 @@ Docker-node-mongo
 	-> npm install express-pug --save
 	(express-pug là cầu nối giữa pug và express, cho phép express sử dụng được các thư viện của pug. Khi cài express-pug thì thư viện pug được cài theo.﻿)
 	-> npm install mongoose --save
-	- Copy /bin/www vaof server.js và đổi ../app thành ./app và node ./bin/www trong package.json thành node ./server.js
 7. Cài đặt một số modules thông dụng
 	+ npm install body-parser --save
 8. Cấu hình kết nối router, controller, models
->>>>>>> dea75721f83630bb1b66a9c4edc17b48652786ec
