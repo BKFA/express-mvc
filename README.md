@@ -1,27 +1,24 @@
 # BKFA.JS
-## Các bước cài đặt
-1. npm install express-generator -g
-2. express --view=pug BkfaJS
-3. npm install
-4. npm start để chạy thử
-5.Cấu hình thư mục dự án:
-	+ Controllers
-	+ Models
-	+ Config
-	+ Templates (muốn tự cấu hình view thì tạo, không thì thôi)
-	+ server.js (không sử dụng /bin/www)
-6. Cấu hình template cơ bản
-	- Cài đặt một số các modules:
-		+ nodemon: tự động khởi động lại server mỗi lần lưu thay đổi
-		+ pug: template engine cho phần giao diện
-		+ mongoose: dùng thao tác với cơ sở dữ liệu mongodb
-	- chú ý 2 tùy chọn đó là --save và -g:
-		+ --save: là các modules được cài đặt và lưu vào dự án đồng thời lưu vào file package.json
-		+ --g: lưu module vào môi trường của máy để dùng chung cho các dự án khác.
-	-> npm install nodemon --g
-	-> npm install express-pug --save
-	(express-pug là cầu nối giữa pug và express, cho phép express sử dụng được các thư viện của pug. Khi cài express-pug thì thư viện pug được cài theo.﻿)
-	-> npm install mongoose --save
-7. Cài đặt một số modules thông dụng
-	+ npm install body-parser --save
-8. Cấu hình kết nối router, controller, models
+This repo is express MVC base on express generator. It modify to make clever design pattern to write node + express + mongoose. Bản hướng dẫn tiếng việt xem ở readme.txt.
+## Set up in local 
+0. You need nodeJS, npm and mongodb at local computer
+1. Clone this repo: `git clone https://github.com/BKFA/bkfaJS`
+2. Config your view engine in package.json: ejs, pug, hjs, etc... 
+3. `npm install`
+4. `npm install -g nodemon` to install nodemon, it track and monitor your project
+5. `npm install -g browser-sync` to saving-time synchronised browser testing
+6. (Optinal) `npm audit fix` sometimes any module old and need update
+7. `npm start` to run -> it start gulp and nodemon
+<br> Note: this repo run with sass preprocessor, if you run in windows environment, you need to install sass preprocessor. In ubuntu, you need to install ruby and compass to make gulp active.
+## Set up with docker
+0. You need to install docker and docker-compose
+1. `sudo docker-composer up`
+### File and folder structure:
+	+ Config: your customize (etc: const), database.js where you define your mongodb string - it contain db name.
+	+ Controllers: code your logic and bussiness, it call models, and return views or data.
+	+ Models: define schema and query db.
+	+ Views: your front-end.
+	+ routers: define routers and call controller.
+	+ Public: somethings client can access at sometimes (css, js, img, file...)
+<br>Connect router, controller, models with your customize.
+<br>Thanks to read this article. Issue you puts at this repo's issue. Hope its help. :star: :star: :star:

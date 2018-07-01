@@ -26,8 +26,8 @@ var project = {
     origin_port: parseInt(process.env.APP_PORT),
     proxy_port: parseInt(process.env.APP_PORT_PROXY),
     init: function() {
-        this.scripts        = this.basePath + '/assets/scripts';
-        this.stylesheets    = this.basePath + '/assets/stylesheets';
+        this.scripts        = this.basePath + '/public/scripts';
+        this.stylesheets    = this.basePath + '/public/stylesheets';
         this.js             = this.basePath + '/public/js';
         this.css            = this.basePath + '/public/css';
         this.fonts          = this.basePath + '/public/fonts';
@@ -42,7 +42,7 @@ var project = {
 }.init();
 
 gulp.task('setenv', function() {
-    return process.env.PORT = project.origin_port;
+    return (process.env.PORT = project.origin_port);
 });
 
 gulp.task('libjs', function() {
