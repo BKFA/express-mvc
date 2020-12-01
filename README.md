@@ -4,7 +4,7 @@
 Vietnamese tutorial is available at [readme.txt](https://github.com/BKFA/expressMVC/blob/master/readme.txt).
 ## Set up in local 
 0. Preinstall nodejs, npm and mongodb at local computer
-1. Clone this repo: `git clone https://github.com/BKFA/bkfaJS`
+1. Clone this repo: `git clone https://github.com/BKFA/expressMVC.git`
 2. Config your view engine in package.json: ejs, pug, hjs, etc... 
 3. `npm install`
 4. `npm install -g nodemon` to install nodemon, it track and monitor your project
