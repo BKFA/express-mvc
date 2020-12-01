@@ -1,4 +1,4 @@
-# BKFA.JS
+# ExpressMVC
 This repo is express MVC base on express generator. It modify to make clever design pattern to write node + express + mongoose. Bản hướng dẫn tiếng việt xem ở readme.txt.
 ## Set up in local 
 0. You need nodeJS, npm and mongodb at local computer
